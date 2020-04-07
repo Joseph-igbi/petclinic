@@ -1,6 +1,0 @@
-- hosts: jenkins
-  become: yes
-  roles:
-  - common
-  - jenkins
-
