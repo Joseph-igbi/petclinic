@@ -3,7 +3,7 @@
     name: docker
 - name: jenkins user
   user:
-    name: jenkins
+    name: seunfab48
     groups: docker
     append: yes
     state: present
