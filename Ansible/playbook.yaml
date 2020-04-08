@@ -1,0 +1,12 @@
+- hosts: localhost
+  become: yes
+  roles:
+  - common
+  - docker
+  - terraform
+- hosts: jenkins
+  become: yes
+  roles:
+  - common
+  - jenkins
+
