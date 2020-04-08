@@ -8,13 +8,16 @@ services:
     ports:
     - target: 4200
       published: 4200
-
+      protocol: tcp
   back_end:
     image: springcommunity/spring-petclinic-rest
     container_name: back_end
     ports:
     - target: 9966
       published: 9966
+      protocol: tcp
+
+
 
 
 

@@ -20,7 +20,10 @@
  * @author Vitaliy Fedoriv
  */
 
+
+
+
 export const environment = {
   production: true,
-  REST_API_URL: 'http://35.246.43.91:9966/petclinic/api/'
+  REST_API_URL: 'http://35.246.88.127:80/api/api/'
 };

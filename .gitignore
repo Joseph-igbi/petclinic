@@ -1,1 +1,7 @@
 spring-petclinic-rest
+README.md
+terraform.tfstate.backup
+terraform.tfstate
+account.json
+kubevenv
+*.terraform

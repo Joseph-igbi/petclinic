@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -7,7 +8,7 @@ spec:
     app: frontend
   ports: 
   - protocol: TCP
-    port: 4200
+    port: 80
     targetPort: 4200
   type: LoadBalancer
 ---
@@ -31,3 +32,6 @@ spec:
         image: josephigbi/petclinic-angular
         ports:
         - containerPort: 4200
+        env:
+        - name: IP_address
+          value: "{{IP_address}}"
