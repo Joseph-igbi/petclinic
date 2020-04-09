@@ -9,6 +9,7 @@ spec:
   ports: 
   - protocol: TCP
     port: 9966
+    targetPort: 9966
   type: LoadBalancer
 ---
 apiVersion: apps/v1
@@ -31,3 +32,4 @@ spec:
         image: springcommunity/spring-petclinic-rest
         ports:
         - containerPort: 9966
+

@@ -16,6 +16,18 @@ services:
     - target: 9966
       published: 9966
       protocol: tcp
+  nginx:
+    image: josephigbi/petclinic-nginx
+    container_name: nginx
+    build: ./nginx
+    ports:
+    - target: 80
+      published: 80
+    volumes:
+    - type: bind
+      source: ./nginx/nginx.conf
+      target: /etc/nginx/nginx.conf
+
 
 
 
